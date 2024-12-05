@@ -3,7 +3,7 @@ st.title('st.form')
 # 'with' 표기법을 사용한 전체 예시
 st.header('1. with 표기법 사용 예시')
 st.subheader('커피 머신')
-with st.form('my sorm'):
+with st.form('my form'):
     st.subheader('**커피 주문하기**')
     # 입력 위젯
     coffe_bean_val = st.selectbox('커피콩', ['아라비카', '로부스터'])
@@ -19,6 +19,7 @@ if submitted:
                 -커피콩: '{coffe_bean_val}'
                 -커피 로스팅: '{coffe_roast_val}'
                 -추출 방법: '{brewing_val}'
+                -서빙 방식: '{serving_type_val}'
                 -우유: '{milk_val}'
                 -자신의 컵 가져오기: '{owncup_val}'
                 ''')
